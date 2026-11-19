@@ -1,0 +1,6 @@
+{
+  "cleanUrls": true,
+  "redirects": [
+    { "source": "/:path*", "has": [{ "type": "host", "value": "www.devanote.com.br" }], "destination": "https://devanote.com.br/:path*", "permanent": true }
+  ]
+}
