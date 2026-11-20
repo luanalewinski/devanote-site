@@ -3,7 +3,7 @@
   Azul #00574b · Laranja #43ffb3 · Bege #cfe2dc · Grafite #1F1F1F
   Fonte Figtree · Logo Urbanist
 */
-:root{--grao:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");--bg:#f6f8f6;--surface:#fff;--surface-2:#eaf3ef;--ink:#0f2b27;--ink-soft:#4c625e;--muted:#5a6e6a;--teal:#43ffb3;--teal-deep:#00c48c;--teal-ink:#00574b;--teal-tint:#dcf8ec;--on-teal:#1f1f1f;--bg-dark:#00211c;--ink-on-dark:#e6f5ef;--ink-on-dark-soft:#9db0ab;--focus:#43ffb3;--line:#4c625e24;--line-on-dark:#ffffff1a;--cream:#eaf3ef;--cream-2:#dcf8ec;--cream-line:#4c625e29;--deep:#001a16;--navy:#00574b;--r-sm:12px;--r-md:16px;--r-lg:22px;--shadow:0 26px 64px -30px #00574b66;--shadow-dark:0 40px 90px -40px #000c;--container:1140px;--ease:cubic-bezier(.16,.7,.2,1);--font:"Figtree",ui-sans-serif,system-ui,sans-serif}
+:root{--grao:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");--bg:#f6f8f6;--surface:#fff;--surface-2:#eaf3ef;--ink:#0f2b27;--ink-soft:#4c625e;--muted:#5a6e6a;--teal:#43ffb3;--teal-deep:#00c48c;--teal-ink:#00574b;--teal-tint:#dcf8ec;--on-teal:#1f1f1f;--bg-dark:#00211c;--ink-on-dark:#fff;--ink-on-dark-soft:#fff;--focus:#43ffb3;--line:#4c625e24;--line-on-dark:#ffffff1a;--cream:#eaf3ef;--cream-2:#dcf8ec;--cream-line:#4c625e29;--deep:#001a16;--navy:#00574b;--r-sm:12px;--r-md:16px;--r-lg:22px;--shadow:0 26px 64px -30px #00574b66;--shadow-dark:0 40px 90px -40px #000c;--container:1140px;--ease:cubic-bezier(.16,.7,.2,1);--font:"Figtree",ui-sans-serif,system-ui,sans-serif}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;overflow-x:clip}
 body{background-color:var(--bg);color:var(--ink);font-family:var(--font);-webkit-font-smoothing:antialiased;background-image:repeating-linear-gradient(90deg,#4c625e0a 0 1px,#0000 1px 88px);background-attachment:fixed;line-height:1.6}
@@ -88,12 +88,12 @@ section[id]{scroll-margin-top:84px}
 .vhero-title{letter-spacing:-.03em;color:#fff;font-size:clamp(44px,7vw,88px);font-weight:600;line-height:1}
 .vhero-title .t-thin{color:#fff;font-weight:300}
 .vhero-title .t-lar{color:#43ffb3}
-.vhero-sub{color:#ffffffd1;max-width:44ch;font-size:clamp(17px,2vw,20px);line-height:1.5}
+.vhero-sub{color:#fff;max-width:44ch;font-size:clamp(17px,2vw,20px);line-height:1.5}
 .vhero-actions{margin-top:6px}
 .vhero-trust{flex-wrap:wrap;gap:22px;margin:16px 0 0;padding:0;list-style:none;display:flex}
-.vhero-trust li{color:#ffffffe6;align-items:center;gap:8px;font-size:14px;display:inline-flex}
+.vhero-trust li{color:#fff;align-items:center;gap:8px;font-size:14px;display:inline-flex}
 .vhero-trust svg{color:var(--teal)}
-.vhero-cue{z-index:3;color:#ffffffb3;letter-spacing:.24em;text-transform:uppercase;flex-direction:column;align-items:center;gap:10px;font-size:10px;display:flex;position:absolute;bottom:30px;left:50%;transform:translate(-50%)}
+.vhero-cue{z-index:3;color:#fff;letter-spacing:.24em;text-transform:uppercase;flex-direction:column;align-items:center;gap:10px;font-size:10px;display:flex;position:absolute;bottom:30px;left:50%;transform:translate(-50%)}
 .vhero-cue-line{transform-origin:top;background:linear-gradient(#fffc,#0000);width:1px;height:38px;animation:1.8s ease-in-out infinite cue}
 @keyframes cue{0%,to{opacity:.4;transform:scaleY(.5)}50%{opacity:1;transform:scaleY(1)}}
 
@@ -108,7 +108,7 @@ section[id]{scroll-margin-top:84px}
 .tela-topo b{font-weight:600;font-size:13px}
 .tela-topo svg{width:22px;height:20px;--mk:url(#dvCor)}
 .tela-saldo{border-radius:18px;padding:14px;background:linear-gradient(150deg,#00574b,#001a16);color:#fff}
-.tela-saldo small{display:block;color:#9db0ab;font-size:11px}
+.tela-saldo small{display:block;color:#fff;font-size:11px}
 .tela-saldo strong{display:block;margin-top:4px;font-size:22px;font-weight:600;letter-spacing:-.02em;font-variant-numeric:tabular-nums;white-space:nowrap}
 .tela-barra{height:6px;border-radius:999px;background:#dcf8ec;margin-top:14px;overflow:hidden}
 .tela-barra span{display:block;height:100%;width:calc(var(--p) * 100%);background:linear-gradient(90deg,#00574b,#43ffb3)}
@@ -245,24 +245,24 @@ section[id]{scroll-margin-top:84px}
 .cursor-aura{pointer-events:none;opacity:0;z-index:0;filter:blur(24px);will-change:transform,opacity;background:radial-gradient(circle,#43ffb329,#0000 62%);border-radius:50%;width:620px;height:620px;transition:opacity .4s;position:absolute;top:0;left:0}
 .simular-grid{grid-template-columns:1fr .82fr;align-items:center;gap:56px;display:grid;position:relative}
 .simular-copy{flex-direction:column;gap:18px;display:flex}
-.simular-copy h2{color:#f2f7f5;font-size:clamp(28px,3.6vw,42px);line-height:1.1}
-.simular-copy .t-thin{color:#ffffff85}
-.simular-lead{color:#c4dbd4;max-width:48ch;font-size:18px;line-height:1.62}
+.simular-copy h2{color:#fff;font-size:clamp(28px,3.6vw,42px);line-height:1.1}
+.simular-copy .t-thin{color:#fff}
+.simular-lead{color:#fff;max-width:48ch;font-size:18px;line-height:1.62}
 .simwrap{place-items:center;display:grid;position:relative}
 .simcard{-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);width:min(370px,100%);box-shadow:var(--shadow-dark);background:linear-gradient(160deg,#ffffff17,#ffffff08);border:1px solid #ffffff1f;border-radius:26px;padding:28px;position:relative}
-.sim-ct{color:#b3cfc8;justify-content:space-between;align-items:center;font-size:13px;display:flex;gap:10px}
+.sim-ct{color:#fff;justify-content:space-between;align-items:center;font-size:13px;display:flex;gap:10px}
 .pill{white-space:nowrap;color:var(--teal);letter-spacing:.03em;background:#43ffb329;border-radius:999px;align-items:center;gap:5px;padding:6px 11px;font-size:11px;font-weight:700;display:inline-flex}
-.sim-val{color:#f2f7f5;font-variant-numeric:tabular-nums;margin-top:14px;font-size:44px;font-weight:600}
+.sim-val{color:#fff;font-variant-numeric:tabular-nums;margin-top:14px;font-size:44px;font-weight:600}
 .sim-range{font-size:12px}
-.sim-row{color:#cfe2dc;border-top:1px solid #ffffff1a;justify-content:space-between;padding:13px 0;font-size:14px;display:flex}
-.sim-row b{color:#f2f7f5;font-variant-numeric:tabular-nums;font-weight:600}
+.sim-row{color:#fff;border-top:1px solid #ffffff1a;justify-content:space-between;padding:13px 0;font-size:14px;display:flex}
+.sim-row b{color:#fff;font-variant-numeric:tabular-nums;font-weight:600}
 .sim-cta{margin-top:16px}
 .sim-input{appearance:none;-webkit-appearance:none;background:linear-gradient(90deg,var(--teal) var(--pct,56%),#ffffff24 var(--pct,56%));cursor:pointer;border-radius:99px;width:100%;height:8px;margin:18px 0 8px}
 .sim-input::-webkit-slider-thumb{-webkit-appearance:none;border:3px solid var(--teal);cursor:grab;background:#f2f7f5;border-radius:50%;width:24px;height:24px;transition:transform .15s;box-shadow:0 4px 12px #0006}
 .sim-input::-webkit-slider-thumb:active{cursor:grabbing;transform:scale(1.1)}
 .sim-input::-moz-range-thumb{border:3px solid var(--teal);cursor:grab;background:#f2f7f5;border-radius:50%;width:22px;height:22px}
 .sim-input:focus-visible{outline:2px solid var(--focus);outline-offset:5px}
-.sim-note{color:#ffffff99;text-align:center;margin-top:12px;font-size:12px}
+.sim-note{color:#fff;text-align:center;margin-top:12px;font-size:12px}
 
 /* Rodapé */
 .site-footer{background:var(--surface);border-top:1px solid var(--line);padding:56px 0 40px;position:relative;z-index:6}
@@ -285,7 +285,7 @@ section[id]{scroll-margin-top:84px}
 .sticky-cta-inner{background:var(--deep);color:#fff;padding:12px 16px calc(12px + env(safe-area-inset-bottom));border-top:1px solid #ffffff1a;justify-content:space-between;align-items:center;gap:12px;display:flex}
 .sticky-cta-text{flex-direction:column;line-height:1.2;display:flex}
 .sticky-cta-text strong{font-size:14px}
-.sticky-cta-text span{color:#ffffffb3;font-size:12px}
+.sticky-cta-text span{color:#fff;font-size:12px}
 
 /* Títulos com letras animadas */
 .gs{display:inline}
