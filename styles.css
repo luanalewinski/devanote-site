@@ -1,29 +1,29 @@
 /*
   Devanote: identidade da marca
-  Roxo #0e3655 · Marinho #0e3655 · Claro #f3ece4
+  Roxo #00574b · Marinho #00574b · Claro #eaf3ef
   Títulos Figtree · Corpo Inter · Logo Urbanist
 */
 :root {
-  --purple: #0e3655;
-  --purple-dark: #0b2740;
-  --purple-text: #b4480e;
-  --purple-soft: #ffe9da;
-  --purple-light: #fe7522;
-  --navy: #0e3655;
-  --navy-2: #123f63;
-  --bg: #fbf7f2;
-  --gray: #f3ece4;
+  --purple: #00574b;
+  --purple-dark: #002b25;
+  --purple-text: #00574b;
+  --purple-soft: #dcf8ec;
+  --purple-light: #43ffb3;
+  --navy: #00574b;
+  --navy-2: #00574b;
+  --bg: #f6f8f6;
+  --gray: #eaf3ef;
   --surface: #FFFFFF;
-  --ink: #0e3655;
-  --ink-soft: #4f5866;
-  --line: #e8dfd4;
+  --ink: #00574b;
+  --ink-soft: #4c625e;
+  --line: #dce5e1;
   --radius: 20px;
   --radius-sm: 12px;
   --max: 1160px;
   --font-title: "Figtree", "Inter", "Segoe UI", Arial, sans-serif;
   --font-body: "Inter", "Segoe UI", Arial, sans-serif;
   --font-logo: "Urbanist", "Figtree", Arial, sans-serif;
-  --shadow: 0 1px 2px rgba(14, 54, 85, 0.04), 0 12px 32px -12px rgba(254, 117, 34, 0.18);
+  --shadow: 0 1px 2px rgba(0, 87, 75, 0.04), 0 12px 32px -12px rgba(0, 163, 116, 0.18);
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -77,10 +77,10 @@ p { margin: 0; }
 /* Cabeçalho */
 .site-header {
   position: sticky; top: 0; z-index: 50;
-  background: rgba(251, 247, 242, 0.86);
+  background: rgba(246, 248, 246, 0.86);
   backdrop-filter: saturate(1.6) blur(14px);
   -webkit-backdrop-filter: saturate(1.6) blur(14px);
-  border-bottom: 1px solid rgba(14, 54, 85, 0.06);
+  border-bottom: 1px solid rgba(0, 87, 75, 0.06);
 }
 .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 72px; }
 
@@ -89,7 +89,7 @@ p { margin: 0; }
   display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px;
   color: var(--ink-soft); text-decoration: none; font-size: 15px; font-weight: 500; border-radius: 999px;
 }
-.nav a:hover { color: var(--navy); background: rgba(14, 54, 85, 0.05); }
+.nav a:hover { color: var(--navy); background: rgba(0, 87, 75, 0.05); }
 .nav a.btn-primary, .nav a.btn-primary:hover { color: #fff; padding: 0 20px; margin-left: 8px; background: var(--purple); }
 .nav a.btn-primary:hover { background: var(--purple-dark); }
 
@@ -102,10 +102,10 @@ p { margin: 0; }
   transition: background-color .2s ease, color .2s ease, border-color .2s ease, transform .2s ease;
 }
 .btn svg { width: 20px; height: 20px; flex: none; }
-.btn-primary { background: var(--purple); color: #fff; box-shadow: 0 10px 24px -10px rgba(254, 117, 34, 0.7); }
+.btn-primary { background: var(--purple); color: #fff; box-shadow: 0 10px 24px -10px rgba(0, 163, 116, 0.7); }
 .btn-primary:hover { background: var(--purple-dark); color: #fff; transform: translateY(-1px); }
-.btn-ghost { background: transparent; color: var(--navy); border-color: rgba(14, 54, 85, 0.18); }
-.btn-ghost:hover { background: rgba(14, 54, 85, 0.05); color: var(--navy); }
+.btn-ghost { background: transparent; color: var(--navy); border-color: rgba(0, 87, 75, 0.18); }
+.btn-ghost:hover { background: rgba(0, 87, 75, 0.05); color: var(--navy); }
 .btn-small { min-height: 44px; padding: 0 18px; font-size: 15px; }
 
 .menu-toggle {
@@ -127,24 +127,24 @@ p { margin: 0; }
 .hero-panel::before {
   content: ""; position: absolute; z-index: -1;
   width: 720px; height: 720px; right: -200px; top: -260px; border-radius: 50%;
-  background: radial-gradient(circle, rgba(254, 117, 34, 0.55) 0%, rgba(254, 117, 34, 0) 65%);
+  background: radial-gradient(circle, rgba(0, 163, 116, 0.55) 0%, rgba(0, 163, 116, 0) 65%);
 }
 .hero-panel::after {
   content: ""; position: absolute; z-index: -1;
   width: 520px; height: 520px; left: -220px; bottom: -320px; border-radius: 50%;
-  background: radial-gradient(circle, rgba(254, 117, 34, 0.28) 0%, rgba(254, 117, 34, 0) 65%);
+  background: radial-gradient(circle, rgba(0, 163, 116, 0.28) 0%, rgba(0, 163, 116, 0) 65%);
 }
 .hero-grid { display: grid; grid-template-columns: 1.35fr 0.9fr; gap: 48px; align-items: center; }
 .pill {
   display: inline-flex; align-items: center; gap: 8px; margin-bottom: 24px;
   padding: 8px 14px; border-radius: 999px;
   background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.14);
-  font-size: 14px; font-weight: 500; color: #eef2f7;
+  font-size: 14px; font-weight: 500; color: #e6f5ef;
 }
 .pill::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--purple-light); }
 .hero h1 { font-size: 58px; line-height: 1.04; margin-bottom: 24px; color: #fff; }
 .hero h1 em { font-style: normal; color: var(--purple-light); }
-.hero .lead { font-size: 19px; color: #c3cedb; max-width: 32em; margin-bottom: 36px; }
+.hero .lead { font-size: 19px; color: #c4dbd4; max-width: 32em; margin-bottom: 36px; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
 .hero .btn-ghost { color: #fff; border-color: rgba(255, 255, 255, 0.28); }
 .hero .btn-ghost:hover { background: rgba(255, 255, 255, 0.08); color: #fff; }
@@ -160,7 +160,7 @@ p { margin: 0; }
 .note-title { font-family: var(--font-title); font-weight: 700; font-size: 19px; line-height: 1.2; }
 .note-sub { font-size: 13px; color: var(--ink-soft); }
 .progress { height: 8px; border-radius: 999px; background: var(--purple-soft); margin-bottom: 8px; overflow: hidden; }
-.progress span { display: block; height: 100%; width: 75%; border-radius: 999px; background: linear-gradient(90deg, #fe7522, var(--purple)); }
+.progress span { display: block; height: 100%; width: 75%; border-radius: 999px; background: linear-gradient(90deg, #43ffb3, var(--purple)); }
 .progress-label { font-size: 13px; color: var(--ink-soft); margin-bottom: 16px; }
 .note-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
 .note-list li {
@@ -173,7 +173,7 @@ p { margin: 0; }
   background: var(--purple); color: #fff;
 }
 .check svg { width: 13px; height: 13px; }
-.check.pending { background: transparent; border: 2px dashed #c2b6a8; }
+.check.pending { background: transparent; border: 2px dashed #9db0ab; }
 
 /* Seções */
 .section { padding: 120px 0; }
@@ -204,7 +204,7 @@ p { margin: 0; }
 .service-main {
   grid-row: span 3; display: flex; flex-direction: column; padding: 40px;
   position: relative; overflow: hidden; isolation: isolate;
-  background: linear-gradient(150deg, var(--purple) 0%, #0e3655 45%, #061626 100%);
+  background: linear-gradient(150deg, var(--purple) 0%, #00574b 45%, #001a16 100%);
   color: #fff; border: 0;
 }
 .service-main::after {
@@ -223,7 +223,7 @@ p { margin: 0; }
 .service-main li svg { width: 18px; height: 18px; flex: none; }
 .tag-main {
   align-self: flex-start; margin-top: auto; padding-top: 28px;
-  font-size: 14px; font-weight: 500; color: #ffe9da;
+  font-size: 14px; font-weight: 500; color: #dcf8ec;
 }
 
 /* Etapas */
@@ -259,22 +259,22 @@ p { margin: 0; }
 .about-panel::before {
   content: ""; position: absolute; z-index: -1;
   width: 680px; height: 680px; left: -260px; top: -300px; border-radius: 50%;
-  background: radial-gradient(circle, rgba(254, 117, 34, 0.45) 0%, rgba(254, 117, 34, 0) 65%);
+  background: radial-gradient(circle, rgba(0, 163, 116, 0.45) 0%, rgba(0, 163, 116, 0) 65%);
 }
 .about-panel::after {
   content: ""; position: absolute; z-index: -1;
   width: 560px; height: 560px; right: -200px; bottom: -320px; border-radius: 50%;
-  background: radial-gradient(circle, rgba(254, 117, 34, 0.35) 0%, rgba(254, 117, 34, 0) 65%);
+  background: radial-gradient(circle, rgba(0, 163, 116, 0.35) 0%, rgba(0, 163, 116, 0) 65%);
 }
-.about-panel .label { background: rgba(255, 255, 255, 0.1); color: #ffd9c2; }
+.about-panel .label { background: rgba(255, 255, 255, 0.1); color: #dcf8ec; }
 .about-panel h2 { color: #fff; }
-.about-panel .about-text p { color: #c3cedb; }
+.about-panel .about-text p { color: #c4dbd4; }
 .about-panel .company-card {
   background: rgba(255, 255, 255, 0.06); border: 1px solid rgba(255, 255, 255, 0.14);
   box-shadow: none; backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
 }
 .about-panel .company-card .row { border-top-color: rgba(255, 255, 255, 0.12); }
-.about-panel .company-card dt { color: #a7b6c8; }
+.about-panel .company-card dt { color: #9db0ab; }
 .about-panel .company-card dd { color: #fff; }
 
 /* Contato */
@@ -301,18 +301,18 @@ a.contact-item:hover { border-color: var(--purple); color: var(--ink); transform
 .contact-item strong { display: block; font-weight: 600; word-break: break-word; }
 
 /* Rodapé */
-.site-footer { background: var(--navy); color: #c3cedb; padding: 72px 0 40px; font-size: 15px; }
+.site-footer { background: var(--navy); color: #c4dbd4; padding: 72px 0 40px; font-size: 15px; }
 .footer-grid { display: grid; grid-template-columns: 1.2fr 1fr 0.8fr; gap: 48px; }
 .site-footer .brand { color: #fff; margin-bottom: 16px; }
 .site-footer .brand:hover { color: #fff; }
 .site-footer h2 { font-family: var(--font-title); font-size: 16px; font-weight: 700; letter-spacing: 0; color: #fff; margin-bottom: 14px; }
 .site-footer p { margin-bottom: 6px; }
-.site-footer a { color: #eef2f7; }
+.site-footer a { color: #e6f5ef; }
 .site-footer a:hover { color: #fff; }
 .site-footer p > a { display: inline-flex; align-items: center; min-height: 44px; }
 .footer-links { list-style: none; margin: 0; padding: 0; }
 .footer-links a { display: inline-flex; align-items: center; min-height: 44px; }
-.footer-bottom { margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(255, 255, 255, 0.12); font-size: 14px; color: #a7b6c8; }
+.footer-bottom { margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(255, 255, 255, 0.12); font-size: 14px; color: #9db0ab; }
 
 /* Páginas legais */
 .legal { padding: 80px 0 120px; }
@@ -320,7 +320,7 @@ a.contact-item:hover { border-color: var(--purple); color: var(--ink); transform
 .legal h1 { font-size: 48px; margin-bottom: 12px; }
 .legal .updated { color: var(--ink-soft); margin-bottom: 48px; }
 .legal h2 { font-size: 24px; margin: 48px 0 12px; }
-.legal p, .legal li { color: #3a4452; margin-bottom: 14px; font-size: 17px; }
+.legal p, .legal li { color: #4c625e; margin-bottom: 14px; font-size: 17px; }
 .legal ul { padding-left: 22px; margin: 0 0 14px; }
 .legal .company-card { margin: 8px 0 24px; box-shadow: none; }
 
