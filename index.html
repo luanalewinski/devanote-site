@@ -114,9 +114,9 @@
               <div class="phone" aria-hidden="true">
                 <div class="phone-island"></div>
                 <div class="phone-screen">
-                  <div class="wa-top"><div class="wa-avatar"><svg viewBox="0 0 100 88" aria-hidden="true"><use href="#dv-mark"/></svg></div><div class="wa-id"><strong>Devanote</strong><span>online</span></div></div>
+                  <div class="wa-top"><div class="wa-avatar"><svg viewBox="0 0 100 88" aria-hidden="true"><use href="#dv-mark"/></svg></div><div class="wa-id"><strong>Devanote</strong><span><i class="wa-on"></i>online agora</span></div></div>
                   <div class="wa-chat" data-chat></div>
-                  <div class="wa-bar"><span>Mensagem</span></div>
+                  <div class="wa-bar"><div class="wa-input"><span>Escreva uma mensagem</span><i class="wa-send"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></svg></i></div></div>
                 </div>
               </div>
             </div>
@@ -272,9 +272,10 @@ gl_FragColor=vec4(col,1.);}`;
     if (n === mostrados) return;
     if (n < mostrados) { chat.innerHTML = ""; mostrados = 0; }
     if (mostrados < 0) mostrados = 0;
-    chat.querySelector(".wa-typing")?.remove();
-    for (let i = mostrados; i < n; i++) { const m = document.createElement("div"); m.className = "wa-msg " + MSGS[i][0]; m.textContent = MSGS[i][1]; chat.appendChild(m); }
-    if (n < MSGS.length) { const t = document.createElement("div"); t.className = "wa-msg them wa-typing"; t.innerHTML = "<span></span><span></span><span></span>"; chat.appendChild(t); }
+    const linha = (quem, el) => { const r = document.createElement("div"); r.className = "wa-row " + quem; if (quem === "them") r.innerHTML = '<span class="wa-av"><svg viewBox="0 0 100 88"><use href="#dv-mark"/></svg></span>'; r.appendChild(el); chat.appendChild(r); return r; };
+    chat.querySelector(".wa-row.digitando")?.remove();
+    for (let i = mostrados; i < n; i++) { const m = document.createElement("div"); m.className = "wa-msg " + MSGS[i][0]; m.textContent = MSGS[i][1]; linha(MSGS[i][0], m); }
+    if (n < MSGS.length && MSGS[n][0] === "them") { const t = document.createElement("div"); t.className = "wa-msg them wa-typing"; t.innerHTML = "<span></span><span></span><span></span>"; linha("them", t).classList.add("digitando"); }
     mostrados = n;
     chat.scrollTop = chat.scrollHeight;
   };

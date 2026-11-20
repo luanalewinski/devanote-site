@@ -201,23 +201,34 @@ section[id]{scroll-margin-top:84px}
 .phone::after{content:"";background:#111;border-radius:0 3px 3px 0;width:3px;height:98px;position:absolute;top:178px;right:-2px}
 .phone-island{z-index:6;background:#000;border-radius:18px;width:108px;height:32px;position:absolute;top:24px;left:50%;transform:translate(-50%)}
 .phone-screen{background:#0b141a;border-radius:54px;flex-direction:column;height:clamp(500px,62vh,600px);display:flex;overflow:hidden}
-.wa-top{background:#1f2c33;align-items:center;gap:10px;padding:52px 18px 14px;display:flex}
-.wa-avatar{background:var(--surface);border-radius:50%;place-items:center;width:36px;height:36px;display:grid}
-.wa-avatar svg{width:22px;height:20px;--mk:url(#dvCor)}
-.wa-id strong{color:#fff;font-size:14px;display:block}
-.wa-id span{color:#9db0ab;font-size:11px}
-.wa-chat{flex-direction:column;flex:1;gap:9px;padding:16px 14px;display:flex;overflow:hidden}
+.phone-screen{background:linear-gradient(#0f1c1a,#070f0e)}
+.wa-top{background:#ffffff08;border-bottom:1px solid #ffffff0d;align-items:center;gap:10px;padding:52px 18px 14px;display:flex}
+.wa-avatar,.wa-av{background:linear-gradient(135deg,#43ffb3,#00a374);border-radius:50%;place-items:center;flex:none;display:grid}
+.wa-avatar{width:36px;height:36px}
+.wa-avatar svg{width:20px;height:18px;--mk:#00211c}
+.wa-id strong{color:#fff;font-size:14px;font-weight:600;display:block}
+.wa-id span{color:#ffffff73;font-size:11px;display:flex;align-items:center;gap:5px}
+.wa-on{width:6px;height:6px;border-radius:50%;background:#43ffb3;box-shadow:0 0 0 3px #43ffb32e}
+.wa-chat{flex-direction:column;flex:1;gap:10px;padding:16px 14px;display:flex;overflow:hidden}
 .wa-chat>:first-child{margin-top:auto}
-.wa-msg{max-width:80%;animation:msgIn .32s var(--ease);border-radius:13px;padding:9px 12px;font-size:14px;line-height:1.38}
-.wa-msg.me{color:#f2f7f5;background:#0b7d69;border-bottom-right-radius:4px;align-self:flex-end}
-.wa-msg.them{color:#dce5e1;background:#202c33;border-bottom-left-radius:4px;align-self:flex-start}
-@keyframes msgIn{0%{opacity:0;transform:translateY(16px) scale(.96)}to{opacity:1;transform:none}}
-.wa-typing{align-items:center;gap:4px;padding:12px;display:inline-flex}
-.wa-typing span{background:#9db0ab;border-radius:50%;width:6px;height:6px;animation:1s infinite waTyping}
+.wa-row{display:flex;align-items:flex-end;gap:7px;animation:waIn .38s cubic-bezier(.22,1,.36,1) both}
+.wa-row.me{justify-content:flex-end;--dx:20px}
+.wa-row.them{--dx:-20px}
+.wa-av{width:24px;height:24px}
+.wa-av svg{width:13px;height:12px;--mk:#00211c}
+.wa-msg{max-width:78%;border-radius:18px;padding:9px 13px;font-size:13.5px;line-height:1.42}
+.wa-msg.me{color:#fff;background:linear-gradient(90deg,#00a374,#00574b);border-top-right-radius:6px;box-shadow:0 8px 22px -6px #00a37466}
+.wa-msg.them{color:#f2f7f5;background:#1b2a27e6;border:1px solid #ffffff14;border-top-left-radius:6px;box-shadow:0 4px 12px -2px #0000004d;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+@keyframes waIn{0%{opacity:0;transform:translate(var(--dx),12px) scale(.96)}to{opacity:1;transform:none}}
+.wa-typing{display:inline-flex;align-items:center;gap:4px;padding:12px 14px}
+.wa-typing span{background:#ffffff99;border-radius:50%;width:7px;height:7px;animation:.8s ease-in-out infinite waTyping}
 .wa-typing span:nth-child(2){animation-delay:.15s}
 .wa-typing span:nth-child(3){animation-delay:.3s}
-@keyframes waTyping{0%,60%,to{opacity:.3;transform:translateY(0)}30%{opacity:1;transform:translateY(-3px)}}
-.wa-bar{color:#8a9e99;background:#1f2c33;padding:11px 14px;font-size:12px}
+@keyframes waTyping{0%,to{opacity:.4;transform:translateY(0)}50%{opacity:1;transform:translateY(-4px)}}
+.wa-bar{border-top:1px solid #ffffff0d;padding:10px 12px 14px}
+.wa-input{display:flex;align-items:center;gap:8px;border:1px solid #ffffff1a;background:#ffffff0a;border-radius:14px;padding:6px 6px 6px 14px;color:#ffffff4d;font-size:12px}
+.wa-input span{flex:1}
+.wa-send{display:grid;place-items:center;width:30px;height:30px;border-radius:10px;background:#43ffb3;color:#00211c;font-style:normal}
 
 /* Dúvidas */
 .faq{z-index:4;background:var(--bg);border-radius:42px 42px 0 0;margin-top:-5vh;padding:calc(104px + 5vh) 0 104px;position:relative}
